@@ -53,6 +53,39 @@
             object-fit: cover;
         }
     </style>
+    <style>
+  /* Scoped styles for the View Us section */
+  #viewus { --primary:#110554; } /* keeps designable */
+  #viewus .platform-card{
+    border:1px solid rgba(17,5,84,0.06);
+    background:#fff;
+    transition:transform .15s ease, box-shadow .15s ease;
+    padding:22px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  #viewus .platform-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(17,5,84,0.06);
+  }
+  #viewus .platform-logo{
+    max-height:56px;
+    width:auto;
+    display:inline-block;
+    margin-bottom:12px;
+  }
+  #viewus .section-title-small{
+    color:var(--primary);
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  @media (max-width:575.98px){
+    #viewus .platform-card{text-align:center;}
+    #viewus .platform-logo{margin:0 auto 12px; display:block;}
+  }
+</style>
 </head>
 
 <body>
@@ -325,7 +358,52 @@
             </div>
         </div>
         <!-- Cottages / Rooms End -->
+<!-- view us section  -->
+ <div class="container-xxl py-5" id="viewus">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h6 class="section-title text-center text-primary text-uppercase section-title-small">View Us On</h6>
+      <h2 class="mb-3" style="font-weight:700">Featured On <span class="text-primary text-uppercase">Trusted Platforms</span></h2>
+      <p class="mb-0">Blue Mermaid Homestay appears on traveller review platforms and editorial guides — read guest reviews or find travel tips about nearby beaches.</p>
+    </div>
 
+    <div class="row g-4 justify-content-center mt-4">
+      <!-- TripAdvisor -->
+      <div class="col-lg-5 col-md-6">
+        <div class="rounded platform-card">
+          <div>
+            <!-- Replace with local image if preferred -->
+            <img src="./images/tripadviser.png" alt="TripAdvisor logo" class="platform-logo">
+            <h5 style="margin-top:6px;">TripAdvisor — Reviews & Ratings</h5>
+            <p class="mb-3" style="color:#333;">
+              See verified guest reviews, ratings and photos from travellers who stayed at Blue Mermaid Homestay. Real experiences to help you decide.
+            </p>
+          </div>
+          <div class="text-end">
+            <a href="https://www.tripadvisor.in/ShowUserReviews-g7910370-d1999854-r124659604-Blue_Mermaid_Homestay-Thottada_Kannur_Kannur_District_Kerala.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Read Reviews on TripAdvisor</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lonely Planet -->
+      <div class="col-lg-5 col-md-6">
+        <div class="rounded platform-card">
+          <div>
+            <img src="./images/trip.jpeg" alt="Lonely Planet logo" class="platform-logo">
+            <h5 style="margin-top:6px;">Lonely Planet — Travel Guide</h5>
+            <p class="mb-3" style="color:#333;">
+              Lonely Planet publishes editorial travel guides and articles — discover top Indian beaches and expert tips that include destinations near Kannur.
+            </p>
+          </div>
+          <div class="text-end">
+            <a href="https://www.lonelyplanet.com/articles/best-beaches-in-india" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Read on Lonely Planet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End View Us On snippet -->
         <!-- Events & Celebrations Start -->
         <!-- moved to after cottages (id used to link from carousel button) -->
         <div class="container-xxl py-5" id="events">
@@ -677,6 +755,7 @@
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Via Adikadalayi SreeKrishna Temple, Thottada Beach, Kannur, Kerala</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 94973 00234</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9447024323</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>bluemermaidknr@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/homestaykerala/about"><i class="fab fa-facebook-f"></i></a>
